@@ -32,7 +32,7 @@
 | Folia | 支持 |
 | 多插件联动 | 支持（PlaceholderAPI、WorldGuard、eco、EcoEnchants 等） |
 
-> Forge / Bukkit 混合端兼容性有限，如有问题请反馈。
+> 混合端兼容性有限，如有问题请自行承担。
 
 ## 安装
 
