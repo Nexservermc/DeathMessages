@@ -1,0 +1,97 @@
+plugins {
+    `java-library`
+    `maven-publish`
+}
+
+group = "dev.mrshawn.deathmessages"
+version = "26.3fork"
+
+repositories {
+    mavenCentral()
+
+    flatDir {
+        dirs("./libs")
+    }
+
+    // PaperMC
+    maven {
+        name = "papermc-repo"
+        url = uri("https://repo.papermc.io/repository/maven-public/")
+    }
+
+    // PlaceholderAPI
+    maven {
+        name = "placeholderapi-repo"
+        url = uri("https://repo.helpch.at/releases/")
+    }
+
+    // NBT-API
+    maven {
+        name = "codemc-repo"
+        url = uri("https://repo.codemc.org/repository/maven-public/")
+    }
+
+    // Eco
+    maven {
+        name = "auxilor-repo"
+        url = uri("https://repo.auxilor.io/repository/maven-public/")
+    }
+
+    // JitPack
+    maven {
+        name = "jitpack.io"
+        url = uri("https://jitpack.io/")
+    }
+
+    // DiscordSRV
+    maven {
+        name = "Scarsz-Nexus"
+        url = uri("https://nexus.scarsz.me/content/groups/public/")
+    }
+
+    // CombatLogX - 暂时禁用：nexus.sirblobman.xyz 已无法解析
+    // maven {
+    //     name = "sirblobman-public"
+    //     url = uri("https://nexus.sirblobman.xyz/public/")
+    // }
+
+    // sk89q's
+    maven {
+        name = "sk89q-repo"
+        url = uri("https://maven.enginehub.org/repo/")
+    }
+
+    // Lumine's
+    maven {
+        name = "Lumine Releases"
+        url = uri("https://mvn.lumine.io/repository/maven-public/")
+    }
+
+    // worldguard-legacy
+    maven {
+        name = "minebench-repo"
+        url = uri("https://repo.minebench.de/")
+    }
+
+    // FoliaLib
+    maven {
+        name = "tcoded-releases"
+        url = uri("https://repo.tcoded.com/releases")
+    }
+
+    // FastStats
+    maven {
+        name = "faststatsReleases"
+        url = uri("https://repo.faststats.dev/releases")
+    }
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(25))
+}
+
+tasks {
+    compileJava {
+        options.encoding = "UTF-8"
+    }
+}

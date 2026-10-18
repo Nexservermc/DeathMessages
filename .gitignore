@@ -1,0 +1,31 @@
+# Mac filesystem dust
+.DS_Store/
+.DS_Store
+
+# Linux temp files
+*~
+
+# vim
+.*.sw[a-p]
+
+# IntelliJ
+*.iml
+.idea
+
+# Gradle
+!gradle/wrapper/gradle-wrapper.jar
+.gradle
+build
+
+# Eco
+bin
+
+# DeathMessages
+run
+
+# Local build logs
+build-check.log
+build-check.err.log
+dl-gradle.ps1
+dl-gradle.log
+curl-dl.log
